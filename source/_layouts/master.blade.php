@@ -15,7 +15,7 @@
     </div>
 
     <div class="footer">
-
+        powered by <a href="http://jigsaw.tighten.co">JIGSAW</a>
     </div>
     </body>
 </html>
