@@ -1,9 +1,9 @@
 @extends('_layouts.master')
 
+@section('page_title', $page->title)
 
 @section('body')
 
-    <h2>{{ $page->title }}</h2>
     <p>By {{ $page->author }} • {{ date('F j, Y', $page->date) }}</p>
 
     @yield('content')
