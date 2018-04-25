@@ -1,7 +1,9 @@
-body {
-  font-family: serif;
+$font-family-sans-serif: "Courier New", Courier, monospace;
+$body-bg: #f5f4f6;
+$font-size-base: 1.1rem;
+
+.main-body {
+  padding: 2em 0;
 }
 
-.footer {
-  padding-top: 30px;
-}
+@import "../../../node_modules/bootstrap/scss/bootstrap";

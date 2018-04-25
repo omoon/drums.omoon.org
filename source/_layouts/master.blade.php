@@ -4,25 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <title>drums.omoon.org</title>
     <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="/assets/js/main.js"></script>
 </head>
 <body>
 <div class="container">
 
-    <div class="row">
-        <h1><a href="{{ $page->baseUrl }}">Site Title</a></h1>
-    </div>
-
-    <div class="row">
-        <div class="col-md-3">
-            <ul>
-                <li><a href="{{ $page->baseUrl }}/gear">Gear</a></li>
-                <li><a href="{{ $page->baseUrl }}/blog">Blog</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand">Site Title</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="{{ $page->baseUrl }}/gear">Gear</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ $page->baseUrl }}/blog">Blog</a></li>
             </ul>
         </div>
-        <div class="col-md-9">
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="row main-body">
+        <div class="col-md-8 offset-2">
             <h2>
                 @yield('page_title')
             </h2>

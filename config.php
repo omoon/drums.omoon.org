@@ -7,7 +7,7 @@ return [
         'posts' => [
             'sort' => ['featured', 'date'],
             'path' => 'blog/{filename}',
-            'author' => 'Tighten Co.',
+            'author' => 'omoon',
         ],
     ],
 ];

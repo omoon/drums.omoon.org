@@ -6,8 +6,11 @@
 
     <p>By {{ $page->author }} • {{ date('F j, Y', $page->date) }}</p>
 
-    @yield('content')
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ $page->youtube }}?rel=0" allowfullscreen></iframe>
+    </div>
 
+    @yield('content')
 
     @if ($page->getNext())
         <p>Read my next post:
